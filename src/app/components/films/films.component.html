@@ -1,0 +1,3 @@
+<span *ngIf="!films.length">No films</span>
+<app-film *ngFor="let film of films; trackBy: trackByFn" [film]="film" [count]="films.length"
+    (select)="select.emit($event)" (delete)="delete.emit($event)" (rateClick)="rateClick.emit()"></app-film>

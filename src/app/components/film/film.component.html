@@ -1,0 +1,6 @@
+<div *ngIf="film" class="row d-block m-0 pb-1 pt-1">
+    <rating [(ngModel)]="film.rate" [max]="5" (click)="rateClick.emit()"></rating>
+    <span class="ml-10" (click)="select.emit(film.id)">{{film.name}}</span>
+    <button class="btn btn-sm btn-danger float-right" [disabled]="count == 1"
+        (click)="delete.emit(film.id)">Delete</button>
+</div>

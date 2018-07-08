@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+.m-0 {
+    margin: 0px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.form-control.invalid {
+    border-color: #dc3545;
+}
+
+.form-control.invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem #d4aeb2;
+}
